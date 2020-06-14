@@ -1,5 +1,5 @@
 # base image
-FROM node:14.4.0-stretch
+FROM arm64v8/node:14.4.0-stretch
 
 LABEL Description="Pimatic docker image for rpi4 with python for Digispark" Maintainer="kontakt@idbtec.de" Version="1.0"
 

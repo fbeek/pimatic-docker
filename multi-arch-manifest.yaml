@@ -1,0 +1,16 @@
+image: fbeek/pimatic-docker:latest
+manifests:
+  - image: fbeek/pimatic-docker:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: fbeek/pimatic-docker:arm32v7
+    platform:
+      architecture: arm
+      os: linux
+      variant: v7
+  - image: fbeek/pimatic-docker:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
