@@ -11,8 +11,8 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 ####### install #######
 RUN apt update && apt-get -y upgrade
 RUN apt-get install -y netcat-openbsd git make \
-    build-essential libnss-mdns libavahi-compat-libdnssd-dev samba-common wakeonlan \
-    libusb-dev libudev-dev curl libpcap-dev nodejs npm ca-certificates tzdata jq libpcap0.8-dev
+    build-essential libnss-mdns libavahi-compat-libdnssd-dev samba-common wakeonlan python python-usb \
+    libusb-dev libudev-dev curl libpcap-dev ca-certificates tzdata jq libpcap0.8-dev
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /opt/pimatic-docker
