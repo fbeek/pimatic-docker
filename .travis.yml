@@ -12,7 +12,7 @@ install:
 
 script:
   - docker ps -a
-  - (timeout 30s docker logs docker-pimatic -f ; exit 0)
+  - (timeout 30s docker logs pimatic-docker -f ; exit 0)
   - curl -sSf http://localhost:80 > /dev/null
 
 #after_success:
