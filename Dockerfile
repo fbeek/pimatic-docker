@@ -35,4 +35,4 @@ CMD ln -fs /data/config.json /opt/pimatic-docker/config.json && \
    ln -fs /data/pimatic-database.sqlite /opt/pimatic-docker/pimatic-database.sqlite && \
    /etc/init.d/dbus start &&  \
    /etc/init.d/avahi-daemon start && \
-   /usr/bin/nodejs /opt/pimatic-docker/node_modules/pimatic/pimatic.js
+   /usr/local/bin/node /opt/pimatic-docker/node_modules/pimatic/pimatic.js
