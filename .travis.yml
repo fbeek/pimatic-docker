@@ -8,7 +8,6 @@ services:
 env:
   global:
     - DOCKER_REPO=<fbeek/pimatic-docker>
-    -
 before_install:
   - curl -fsSL https://get.docker.com | sh
   - echo '{"experimental":"enabled"}' | sudo tee /etc/docker/daemon.json
