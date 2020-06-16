@@ -16,9 +16,9 @@ RUN apt-get install -y netcat-openbsd git make \
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /opt/pimatic-docker
-RUN npm install -g sqlite
-RUN cd /opt && npm install pimatic --prefix pimatic-docker --production
 
+RUN cd /opt && npm install pimatic --prefix pimatic-docker --production
+RUN npm install sqlite
 ####### init #######
 RUN mkdir /data/
 COPY ./config.json /data/config.json
