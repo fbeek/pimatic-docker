@@ -17,7 +17,7 @@ RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /opt/pimatic-docker
 
-RUN cd /opt && npm install pimatic --prefix pimatic-docker --production
+RUN cd /opt && npm install https://github.com/fbeek/pimatic.git --prefix pimatic-docker --production
 RUN cd /opt/pimatic-docker && npm install sqlite3 serialport@8.0.8
 ####### init #######
 RUN mkdir /data/
