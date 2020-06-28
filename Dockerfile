@@ -19,6 +19,11 @@ RUN mkdir /opt/pimatic-docker
 
 RUN cd /opt && npm install https://github.com/fbeek/pimatic.git --prefix pimatic-docker --production
 RUN cd /opt/pimatic-docker && npm install sqlite3 serialport@8.0.8
+RUN rm -rf /opt/pimatic-docker/pimatic-mobile-frontend
+RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-maxcul.git
+RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-mobile-frontend.git
+RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-homeduino.git
+
 ####### init #######
 RUN mkdir /data/
 COPY ./config.json /data/config.json
