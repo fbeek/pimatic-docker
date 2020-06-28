@@ -22,6 +22,7 @@ RUN cd /opt/pimatic-docker && npm install sqlite3 serialport@8.0.8
 RUN rm -rf /opt/pimatic-docker/pimatic-mobile-frontend
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-maxcul.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-mobile-frontend.git
+RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/homeduinojs.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-homeduino.git
 
 ####### init #######
