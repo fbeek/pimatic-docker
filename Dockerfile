@@ -10,7 +10,7 @@ RUN ln -fs /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 
 ####### install #######
 RUN apt update && apt-get -y upgrade
-RUN apt-get install -y netcat-openbsd git make \
+RUN apt-get install -y netcat-openbsd git make etherwake \
     build-essential libnss-mdns libavahi-compat-libdnssd-dev samba-common wakeonlan python python-usb \
     libusb-dev libudev-dev curl libpcap-dev ca-certificates tzdata jq libpcap0.8-dev
 RUN rm -rf /var/lib/apt/lists/*
@@ -24,6 +24,7 @@ RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-maxcu
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-mobile-frontend.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/homeduinojs.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-homeduino.git
+RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-echo.git
 
 ####### init #######
 RUN mkdir /data/
