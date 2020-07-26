@@ -25,7 +25,26 @@ RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-mobil
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/homeduinojs.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-homeduino.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-echo.git
-RUN cd /opt/pimatic-docker && npm install pimatic-milight-reloaded pimatic-nut pimatic-iframe pimatic-probe pimatic-mqtt pimatic-log-reader pimatic-sunrise pimatic-wakeonlan pimatic-openweather pimatic-links pimatic-filter pimatic-shell-execute pimatic-sysinfo pimatic-upnp-root pimatic-ping pimatic-customcss pimatic-gpio pimatic-fritz pimatic-cron pimatic-dwd
+RUN cd /opt/pimatic-docker && npm install pimatic-milight-reloaded
+RUN cd /opt/pimatic-docker && npm installpimatic-nut
+RUN cd /opt/pimatic-docker && npm installpimatic-iframe
+RUN cd /opt/pimatic-docker && npm installpimatic-probe
+RUN cd /opt/pimatic-docker && npm installpimatic-mqtt
+RUN cd /opt/pimatic-docker && npm installpimatic-log-reader
+RUN cd /opt/pimatic-docker && npm installpimatic-sunrise
+RUN cd /opt/pimatic-docker && npm installpimatic-wakeonlan
+RUN cd /opt/pimatic-docker && npm installpimatic-openweather
+RUN cd /opt/pimatic-docker && npm installpimatic-links
+RUN cd /opt/pimatic-docker && npm installpimatic-filter
+RUN cd /opt/pimatic-docker && npm installpimatic-shell-execute
+RUN cd /opt/pimatic-docker && npm installpimatic-sysinfo
+RUN cd /opt/pimatic-docker && npm installpimatic-upnp-root
+RUN cd /opt/pimatic-docker && npm installpimatic-ping
+RUN cd /opt/pimatic-docker && npm installpimatic-customcss
+RUN cd /opt/pimatic-docker && npm installpimatic-gpio
+RUN cd /opt/pimatic-docker && npm installpimatic-fritz
+RUN cd /opt/pimatic-docker && npm installpimatic-cron
+RUN cd /opt/pimatic-docker && npm installpimatic-dwd
 
 ####### init #######
 RUN mkdir /data/
