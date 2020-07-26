@@ -44,6 +44,9 @@ RUN cd /opt/pimatic-docker && npm install pimatic-gpio
 RUN cd /opt/pimatic-docker && npm install pimatic-fritz
 RUN cd /opt/pimatic-docker && npm install pimatic-cron
 RUN cd /opt/pimatic-docker && npm install pimatic-dwd
+RUN cd /opt/pimatic-docker && npm install pimatic-telegram
+RUN cd /opt/pimatic-docker && npm install pimatic-chronotherm
+RUN cd /opt/pimatic-docker && npm install pimatic-phone
 ####### init #######
 RUN mkdir /data/
 COPY ./config.json /data/config.json
