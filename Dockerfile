@@ -39,7 +39,6 @@ RUN cd /opt/pimatic-docker && npm install pimatic-filter
 RUN cd /opt/pimatic-docker && npm install pimatic-shell-execute
 RUN cd /opt/pimatic-docker && npm install pimatic-sysinfo
 RUN cd /opt/pimatic-docker && npm install pimatic-upnp-root
-RUN cd /opt/pimatic-docker && npm install pimatic-ping
 RUN cd /opt/pimatic-docker && npm install pimatic-customcss
 RUN cd /opt/pimatic-docker && npm install pimatic-gpio
 RUN cd /opt/pimatic-docker && npm install pimatic-fritz
