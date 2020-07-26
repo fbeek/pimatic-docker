@@ -26,26 +26,25 @@ RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/homeduinojs.g
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-homeduino.git
 RUN cd /opt/pimatic-docker && npm install https://github.com/fbeek/pimatic-echo.git
 RUN cd /opt/pimatic-docker && npm install pimatic-milight-reloaded
-RUN cd /opt/pimatic-docker && npm installpimatic-nut
-RUN cd /opt/pimatic-docker && npm installpimatic-iframe
-RUN cd /opt/pimatic-docker && npm installpimatic-probe
-RUN cd /opt/pimatic-docker && npm installpimatic-mqtt
-RUN cd /opt/pimatic-docker && npm installpimatic-log-reader
-RUN cd /opt/pimatic-docker && npm installpimatic-sunrise
-RUN cd /opt/pimatic-docker && npm installpimatic-wakeonlan
-RUN cd /opt/pimatic-docker && npm installpimatic-openweather
-RUN cd /opt/pimatic-docker && npm installpimatic-links
-RUN cd /opt/pimatic-docker && npm installpimatic-filter
-RUN cd /opt/pimatic-docker && npm installpimatic-shell-execute
-RUN cd /opt/pimatic-docker && npm installpimatic-sysinfo
-RUN cd /opt/pimatic-docker && npm installpimatic-upnp-root
-RUN cd /opt/pimatic-docker && npm installpimatic-ping
-RUN cd /opt/pimatic-docker && npm installpimatic-customcss
-RUN cd /opt/pimatic-docker && npm installpimatic-gpio
-RUN cd /opt/pimatic-docker && npm installpimatic-fritz
-RUN cd /opt/pimatic-docker && npm installpimatic-cron
-RUN cd /opt/pimatic-docker && npm installpimatic-dwd
-
+RUN cd /opt/pimatic-docker && npm install pimatic-nut
+RUN cd /opt/pimatic-docker && npm install pimatic-iframe
+RUN cd /opt/pimatic-docker && npm install pimatic-probe
+RUN cd /opt/pimatic-docker && npm install pimatic-mqtt
+RUN cd /opt/pimatic-docker && npm install pimatic-log-reader
+RUN cd /opt/pimatic-docker && npm install pimatic-sunrise
+RUN cd /opt/pimatic-docker && npm install pimatic-wakeonlan
+RUN cd /opt/pimatic-docker && npm install pimatic-openweather
+RUN cd /opt/pimatic-docker && npm install pimatic-links
+RUN cd /opt/pimatic-docker && npm install pimatic-filter
+RUN cd /opt/pimatic-docker && npm install pimatic-shell-execute
+RUN cd /opt/pimatic-docker && npm install pimatic-sysinfo
+RUN cd /opt/pimatic-docker && npm install pimatic-upnp-root
+RUN cd /opt/pimatic-docker && npm install pimatic-ping
+RUN cd /opt/pimatic-docker && npm install pimatic-customcss
+RUN cd /opt/pimatic-docker && npm install pimatic-gpio
+RUN cd /opt/pimatic-docker && npm install pimatic-fritz
+RUN cd /opt/pimatic-docker && npm install pimatic-cron
+RUN cd /opt/pimatic-docker && npm install pimatic-dwd
 ####### init #######
 RUN mkdir /data/
 COPY ./config.json /data/config.json
